@@ -1,0 +1,30 @@
+.signup-box {
+  height: 450px;
+  width: 350px;
+  background-color: white;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid gray;
+  margin-top: 50px;
+
+  &__title {
+    margin-top: 30px;
+    h2 {
+      font-size: 30px;
+      line-height: 50px;
+    }
+  }
+  &__signup {
+    padding-top: 15px;
+    .field {
+      padding-top: 10px;
+    }
+    .actions {
+      padding-top: 20px;
+    }
+  }
+
+  .action-btn {
+    padding-top: 10px;
+  }
+}
