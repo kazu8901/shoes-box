@@ -8,10 +8,10 @@
         - post.errors.full_messages.each do |message|
           %li= message
   .field
-    = f.label :body
+    = f.label :body, "投稿文"
     = f.text_area :body
   .field
-    = f.label :image
-    = f.text_field :image
+    = f.label :image, "添付画像"
+    = f.file_field :image
   .actions
-    = f.submit
+    = f.submit "投稿する"

@@ -1,19 +1,27 @@
-%p#notice= notice
-%h1 Posts
-%table
-  %thead
-    %tr
-      %th Body
-      %th Image
-      %th{:colspan => "3"}
-  %tbody
+%header
+  %p#notice= notice
+  .header-group
+    .header-group__post
+      = link_to icon("fas", "paper-plane"), new_post_path, class: "post-icon"
+    .header-group__title
+      %h2 Shoes-Box
+    .header-group__logout
+      = link_to icon("fas", "sign-out-alt"), destroy_user_session_path, method: "delete", class: "logout-icon"
+
+%body
+  .main-post
     - @posts.each do |post|
-      %tr
-        %td= post.body
-        %td= post.image
-        %td= link_to 'Show', post
-        %td= link_to 'Edit', edit_post_path(post)
-        %td= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }
-%br/
-= link_to 'New Post', new_post_path
-= link_to "ログアウト", destroy_user_session_path, method: "delete"
+      .post-content
+        .post-content__image
+          -if post.image?
+            = image_tag post.image.url
+        .post-content__body
+          .text
+            = post.body
+          .btns
+            .btn
+              = link_to '詳細', post
+            .btn
+              = link_to '編集', edit_post_path(post)
+            .btn
+              = link_to '投稿を削除する', post, method: :delete, data: { confirm: '本当に削除しますか？' }
