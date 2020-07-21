@@ -7,11 +7,12 @@
       %ul
         - post.errors.full_messages.each do |message|
           %li= message
-  .field
-    = f.label :body, "投稿文"
-    = f.text_area :body
-  .field
-    = f.label :image, "添付画像"
-    = f.file_field :image
-  .actions
-    = f.submit "投稿する"
+  .text-area
+    .field
+      = f.label :body, icon("fa", "align-justify")
+      = f.text_area :body, size: "38x10",:placeholder => "投稿内容を入力してください"
+    .field
+      = f.label :image, icon("fa", "image")
+      = f.file_field :image
+    .actions
+      = f.submit "投稿する"

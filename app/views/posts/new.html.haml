@@ -1,3 +1,10 @@
-%h1 投稿する
-= render 'form', post: @post
-= link_to '戻る', posts_path
+%header
+  .header-title
+    %h1 Shoes-Box
+.contents
+  .send-content
+    .send-content__title
+      %h1 投稿する
+    = render 'form', post: @post
+    .back-btn
+      = link_to '戻る', posts_path
