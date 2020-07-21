@@ -19,9 +19,6 @@
           .text
             = post.body
           .btns
-            .btn
-              = link_to '詳細', post
-            .btn
-              = link_to '編集', edit_post_path(post)
-            .btn
-              = link_to '投稿を削除する', post, method: :delete, data: { confirm: '本当に削除しますか？' }
+            = link_to '詳細', post, class: "btn"
+            = link_to '編集', edit_post_path(post), class: "btn"
+            = link_to '投稿を削除する', post, method: :delete, data: { confirm: '本当に削除しますか？' }, class: "btn"
