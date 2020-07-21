@@ -1,55 +1,29 @@
-* {
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-header {
-  height: 100px;
-  width: 100vw;
-  border-bottom: 5px solid gray;
+.login-box {
+  height: 400px;
+  width: 350px;
   background-color: white;
-  .header-title {
-    margin: 0 auto;
-    text-align: center;
-    line-height: 100px;
-    font-size: 70px;
-    font-family: 'Amatic SC', cursive;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid silver;
+  &__title {
+    margin-top: 30px;
+    h2 {
+      font-size: 30px;
+       line-height: 50px;
+    }
+  }
+  &__login {
+    padding-top: 15px;
+    .field {
+      padding-top: 10px;
+    }
+    .actions {
+      padding-top: 20px;
+    }
+  }
+  .action-btn {
+     padding-top: 15px;
   }
 }
 
-.contents {
-  background-image: url(https://i.pinimg.com/originals/10/9e/1a/109e1a4ee9e9862c64dae79c45dc363f.jpg);
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-  
-  .login-box {
-    height: 400px;
-    width: 350px;
-    background-color: white;
-    margin: 0 auto;
-    text-align: center;
-    border: 2px solid gray;
-    margin-top: 50px;
-    &__title {
-      margin-top: 30px;
-      h2 {
-        font-size: 30px;
-        line-height: 50px;
-      }
-    }
-    &__login {
-      padding-top: 15px;
-      .field {
-        padding-top: 10px;
-      }
-      .actions {
-        padding-top: 20px;
-      }
-    }
-    .action-btn {
-      padding-top: 15px;
-    }
-  }
-}
 
