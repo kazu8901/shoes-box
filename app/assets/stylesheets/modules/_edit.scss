@@ -1,0 +1,29 @@
+.edit-contents {
+  margin: 0 auto;
+  height: 550px;
+  width: 500px;
+  text-align: center;
+  border: 3px solid silver;
+  background-color: #ffffff;
+  padding-top: 30px;
+  h1 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  &__form {
+    padding-bottom: 40px;
+  }
+  .text-area {
+    .field {
+      padding-bottom: 30px;
+    }
+  }
+  .back-btn {
+    padding-top: 30px;
+  }
+  .link {
+    text-decoration: none;
+    color: skyblue;
+  }
+}

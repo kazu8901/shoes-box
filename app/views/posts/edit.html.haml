@@ -1,5 +1,11 @@
-%h1 Editing Post
-= render 'form', post: @post
-= link_to 'Show', @post
-|
-= link_to 'Back', posts_path
+%header
+  .header-title
+    %h1 Shoes-Box
+.contents
+  .edit-contents
+    %h1 編集する
+    .edit-contents__form
+      = render 'form', post: @post
+    = link_to '詳細', @post, class: "link"
+    |
+    = link_to 'ホームへ戻る', posts_path, class: "link"
