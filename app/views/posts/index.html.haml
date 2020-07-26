@@ -10,6 +10,15 @@
 
 %body
   .main-post
+    .post-ranking
+      %h1 Good ランキング
+      - @all_ranks.each.with_index(1) do |post, i|
+        .rank
+          %p
+            第
+            = i
+            位
+            = post.body
     - @posts.each do |post|
       .post-content
         .post-content__image
