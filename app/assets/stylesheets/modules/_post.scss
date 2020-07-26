@@ -37,6 +37,28 @@ body {
     height: 100vh;
     width: calc(100vw - 20%);
     background-color: #FFFFFF;
+    .post-ranking {
+      margin: 0 auto;
+      height: 180px;
+      width: 800px;
+      border: 2px solid silver;
+      margin-bottom: 30px;
+      text-align: center;
+      h1 {
+        text-align: center;
+        padding: 10px 0 10px 0;
+        font-size: 30px;
+        font-family: 'Amatic SC', cursive;
+      }
+      
+      .rank {
+        padding-left: 295px;
+        p {
+          padding-bottom: 10px;
+          text-align: left;
+        }
+      }
+    }
     .post-content {
       height: 375px;
       width: 1100px;
