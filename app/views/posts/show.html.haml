@@ -10,6 +10,14 @@
           = image_tag @post.image.url
       .content__body
         = @post.body
+      .content__good
+        %h3
+          Good! :  #{@post.likes.count}件
+        - if current_user.already_liked?(@post)
+          = button_to 'Goodを取り消す', post_like_path(@post), method: :delete
+        - else
+          = button_to 'Good!', post_likes_path(@post)
+
       .content__link
         = link_to '編集する', edit_post_path(@post), class: "btn"
         |

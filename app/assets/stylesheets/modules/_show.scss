@@ -3,13 +3,15 @@
   width: 100vw;
   padding-top: 100px;
   background-color: #FAFAFA;
+  overflow: hidden;
   &__main {
-    padding-top: 50px;
+    padding: 50px 0 50px 0;
     margin: 0 auto;
     text-align: center;;
-    height: 110vh;
+    height: 100%;
     width: calc(100vw - 20%);
     background-color: #FFFFFF;
+    overflow: scroll;
     .content {
       padding-bottom: 100px;
       margin: 0 auto;
@@ -21,12 +23,20 @@
       &__image {
         padding-bottom: 30px;
         height: 400px;
-        
       }
+      &__good {
+        position: absolute;
+        top: 670px;
+        left: 240px;
+        h3 {
+          padding-bottom: 5px;
+        }
+      }
+
       &__link {
         position: absolute;
         top: 700px;
-        left: 245px;
+        left: 445px;
         .btn {
           text-decoration: none;
           color: skyblue;
