@@ -18,6 +18,10 @@
         .post-content__body
           .text
             = post.body
+          .good
+            %h3 Good! :
+            = post.liked_users.count
+            %p 件
           .btns
             = link_to '詳細', post, class: "btn"
             = link_to '編集', edit_post_path(post), class: "btn"

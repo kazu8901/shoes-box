@@ -1,0 +1,11 @@
+%h1 ユーザー詳細ページ
+%h3= @user.email
+%h2 投稿内容
+- @user.posts.each do |post|
+  %a{:href => "/posts/#{post.id}"}= post.content
+  %hr/
+- @user.liked_posts.each do |post|
+  = post.user.email
+  = post.content
+= link_to "ユーザー一覧へ", users_path
+= link_to "ホームへ戻る", posts_path

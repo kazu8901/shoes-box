@@ -62,6 +62,15 @@ body {
           width: 440px;
           margin-left: 5px;
         }
+        .good {
+          display: flex;
+          position: absolute;
+            top: 340px;
+            left: 790px;
+          h3 {
+            padding-right: 5px;
+          }
+        }
         .btns {
           display: flex;
           position: absolute;
