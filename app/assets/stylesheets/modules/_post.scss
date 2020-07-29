@@ -1,8 +1,10 @@
 header {
   .header-group {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     line-height: 100px;
+    display: flex;
+    justify-content: space-around;
     &__post {
       font-size: 30px;
       .post-icon {
@@ -12,15 +14,26 @@ header {
     }
     &__title {
       font-family: 'Amatic SC', cursive;
+      padding: 0 150px 0 300px ;
+
       h2 {
         font-size: 50px;
       }
+    }
+    &__user-name {
+      display: flex;
+      font-size: 20px;
+      color: skyblue;
+      position: fixed;
+      top: 10px;
+      right: 200px;
     }
     &__logout{
       font-size: 40px;
       .logout-icon {
         text-decoration: none;
         color: skyblue;
+        padding-left: 150px;
       }
     }
   }
@@ -73,6 +86,7 @@ body {
         margin: 17px 10px 17px 5px;
         text-align: center;
       }
+
       &__body {
         height: 374px;
         width: 460px;
@@ -83,6 +97,13 @@ body {
           height: 300px;
           width: 440px;
           margin-left: 5px;
+          &__title {
+            height: 50px;
+            width: 100%;
+            line-height: 20px;
+            text-align: center;
+            border-bottom:2px solid silver ;
+          }
         }
         .good {
           display: flex;

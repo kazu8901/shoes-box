@@ -1,10 +1,14 @@
 %header
-  %p#notice= notice
+  .notice
+    %p#notice= notice
   .header-group
     .header-group__post
       = link_to icon("fas", "paper-plane"), new_post_path, class: "post-icon"
     .header-group__title
       %h2 Shoes-Box
+    .header-group__user-name
+      %p User : 
+      =  current_user.name
     .header-group__logout
       = link_to icon("fas", "sign-out-alt"), destroy_user_session_path, method: "delete", class: "logout-icon"
 
@@ -18,7 +22,7 @@
             第
             = i
             位
-            = post.body
+            = post.title
     - @posts.each do |post|
       .post-content
         .post-content__image
@@ -26,6 +30,9 @@
             = image_tag post.image.url
         .post-content__body
           .text
+            .text__title
+              = post.title
+            %br
             = post.body
           .good
             %h3 Good! :
@@ -33,5 +40,6 @@
             %p 件
           .btns
             = link_to '詳細', post, class: "btn"
-            = link_to '編集', edit_post_path(post), class: "btn"
-            = link_to '投稿を削除する', post, method: :delete, data: { confirm: '本当に削除しますか？' }, class: "btn"
+            - if post.user_id == current_user.id
+              = link_to '編集', edit_post_path(post), class: "btn"
+              = link_to '投稿を削除する', post, method: :delete, data: { confirm: '本当に削除しますか？' }, class: "btn"

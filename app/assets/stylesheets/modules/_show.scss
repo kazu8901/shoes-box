@@ -21,8 +21,15 @@
       background-color: #FFFFFF;
       position: relative;
       &__image {
-        padding-bottom: 30px;
-        height: 400px;
+        height: 340px;
+      }
+      &__title {
+        height: 50px;
+        width: 100%;
+        border-top: 2px solid skyblue;
+        border-bottom: 2px solid skyblue;
+        line-height: 50px;
+        margin-bottom: 20px;
       }
       &__good {
         position: absolute;

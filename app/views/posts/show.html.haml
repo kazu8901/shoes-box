@@ -1,5 +1,6 @@
 %header
-  %p#notice= notice
+  .notice
+    %p#notice= notice
   .header-title
     %h1 Shoes-Box
 .post
@@ -8,6 +9,8 @@
       .content__image
         -if @post.image?
           = image_tag @post.image.url
+      .content__title 
+        = @post.title
       .content__body
         = @post.body
       .content__good
@@ -19,6 +22,7 @@
           = button_to 'Good!', post_likes_path(@post)
 
       .content__link
-        = link_to '編集する', edit_post_path(@post), class: "btn"
-        |
+        - if @post.user_id == current_user.id
+          = link_to '編集する', edit_post_path(@post), class: "btn"
+          |
         = link_to '戻る', posts_path, class: "btn"

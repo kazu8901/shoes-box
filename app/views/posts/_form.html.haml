@@ -9,6 +9,9 @@
           %li= message
   .text-area
     .field
+      = f.label :title, icon("fa", "tag")
+      = f.text_field :title, :placeholder => "タイトルを入力する"
+    .field
       = f.label :body, icon("fa", "align-justify")
       = f.text_area :body, size: "38x10",:placeholder => "投稿内容を入力してください"
     .field
