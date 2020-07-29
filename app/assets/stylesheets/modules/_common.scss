@@ -11,6 +11,16 @@ header {
   padding-bottom: 50px;
   position: fixed;
   z-index: 3;
+  .notice {
+    text-align: center;
+    p {
+      background-color: skyblue;
+      color: white;
+      position: fixed;
+      z-index: 4;
+      width: 100%;
+    }
+  }
   .header-title {
     margin: 0 auto;
     text-align: center;
