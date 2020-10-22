@@ -1,5 +1,14 @@
 # README
 
+# アプリ名 Shoes-Box  
+https://gyazo.com/ce6c47cdacefdcea26f2225e0dbf906b
+
+# 開発環境
+・haml  
+・scss  
+・Ruby  
+・VSCode（Visual Studio Code）
+
 # shoes-box DB設計
 
 ## usersテーブル
