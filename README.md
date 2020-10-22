@@ -9,6 +9,16 @@ https://gyazo.com/ce6c47cdacefdcea26f2225e0dbf906b
 ・Ruby  
 ・VSCode（Visual Studio Code）
 
+# アプリ機能
+### 1,記事の投稿
+
+### 2,記事の詳細表示
+
+### 3,いいね機能
+
+### 4,ランキング機能
+いいねの数によって、上位3つの投稿が表示されます。
+
 # shoes-box DB設計
 
 ## usersテーブル
