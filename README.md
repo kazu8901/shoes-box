@@ -2,7 +2,7 @@
 
 # アプリ名 Shoes-Box  
 https://gyazo.com/ce6c47cdacefdcea26f2225e0dbf906b
-スクリーンショット 2020-11-01 16.25.42
+
 
 # 開発環境
 ・haml  
