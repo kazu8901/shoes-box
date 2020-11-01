@@ -2,6 +2,7 @@
 
 # アプリ名 Shoes-Box  
 https://gyazo.com/ce6c47cdacefdcea26f2225e0dbf906b
+<img width="1440" alt="スクリーンショット 2020-11-01 16 25 42" src="https://user-images.githubusercontent.com/65848769/97797324-75dfbc80-1c5f-11eb-881a-ba67ebb61da3.png">
 
 
 # 開発環境
